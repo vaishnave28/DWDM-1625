@@ -1,0 +1,27 @@
+# Create breast cancer dataset
+age <- c(25,30,35,40,45,50,55,60,65,70)
+tumor_size <- c(10,15,20,25,30,35,40,45,50,55)
+inv_nodes <- c(1,2,3,4,5,6,7,8,9,10)
+
+data <- data.frame(age, tumor_size, inv_nodes)
+
+# Histogram of Age
+hist(data$age,
+     main = "Histogram of Age Distribution",
+     xlab = "Age",
+     col = "skyblue",
+     border = "black")
+
+# Scatter plot: Age vs Tumor Size
+plot(data$age, data$tumor_size,
+     main = "Scatter Plot of Age vs Tumor Size",
+     xlab = "Age",
+     ylab = "Tumor Size",
+     pch = 19,
+     col = "red")
+
+# Boxplot of Involved Nodes
+boxplot(data$inv_nodes,
+        main = "Boxplot of Involved Nodes",
+        ylab = "Number of Involved Nodes",
+        col = "lightgreen")
