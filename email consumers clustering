@@ -1,0 +1,76 @@
+
+### **Step 1: Load Dataset**
+
+1. Open **WEKA GUI Chooser**
+2. Click **Explorer**
+3. Go to **Preprocess**
+4. Click **Open file**
+5. Load `email_consumers.arff`
+
+---
+
+## **Clustering Algorithm 1: K-Means**
+
+### **Step 2: Apply K-Means**
+
+1. Go to **Cluster tab**
+2. Choose **SimpleKMeans**
+3. Click **Edit**
+
+   * Set **NumClusters = 3**
+4. Click **Start**
+
+### **Output**
+
+* Cluster centroids
+* Number of instances per cluster
+
+---
+
+## **Clustering Algorithm 2: Hierarchical Clustering**
+
+### **Step 3: Apply Hierarchical Clustering**
+
+1. In **Cluster tab**
+2. Choose **HierarchicalClusterer**
+3. Click **Start**
+
+### **Output**
+
+* Hierarchical grouping of consumers
+* Dendrogram-based structure
+
+---
+
+## **Cluster Interpretation**
+
+* **Cluster 1:**
+  High email open %, high clicks, high time spent
+  → *Highly engaged users*
+
+* **Cluster 2:**
+  Moderate engagement
+  → *Occasional users*
+
+* **Cluster 3:**
+  Low open %, low clicks, low time spent
+  → *Low engagement users*
+
+---
+
+## **Performance Comparison**
+
+| Algorithm    | Speed | Interpretability | Suitability             |
+| ------------ | ----- | ---------------- | ----------------------- |
+| K-Means      | Fast  | Easy             | Best for large datasets |
+| Hierarchical | Slow  | Very High        | Best for small datasets |
+
+---
+
+## **Conclusion (Write This Exactly)**
+
+> Cluster analysis was performed using K-Means and Hierarchical clustering algorithms in WEKA.
+> K-Means performed faster and efficiently grouped consumers based on email behavior, while Hierarchical clustering provided better visual interpretation.
+> K-Means is more suitable for business applications involving large consumer datasets.
+
+
