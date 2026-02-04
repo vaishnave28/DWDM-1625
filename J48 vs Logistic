@@ -1,0 +1,68 @@
+
+
+## **b) Preprocess (WEKA Steps)**
+
+1. Open **WEKA → Explorer**
+2. Click **Preprocess**
+3. Click **Open file** → load `weather.arff`
+4. Check attributes and class label (`play`)
+5. Ensure no missing values
+
+---
+
+## **a) Decision Tree (J48)**
+
+### **Steps**
+
+1. Go to **Classify**
+2. Choose **Tree → J48**
+3. Select **Use training set**
+4. Click **Start**
+
+### **Output**
+
+* Decision Tree model
+* Accuracy (% correctly classified)
+* Confusion Matrix
+
+---
+
+## **c) Logistic Regression**
+
+### **Steps**
+
+1. Go to **Classify**
+2. Choose **Functions → Logistic**
+3. Select **Use training set**
+4. Click **Start**
+
+### **Output**
+
+* Logistic model
+* Accuracy
+* Confusion Matrix
+
+---
+
+## **Comparison**
+
+| Algorithm | Model Type   | Accuracy | Interpretability |
+| --------- | ------------ | -------- | ---------------- |
+| J48       | Tree-based   | High     | Very easy        |
+| Logistic  | Mathematical | High     | Moderate         |
+
+---
+
+## **Inference**
+
+* Decision Tree gives clear IF–THEN rules
+* Logistic regression gives probabilistic prediction
+* Both predict categorical data effectively
+
+---
+
+## **Conclusion**
+
+Decision Tree (J48) is easier to understand and interpret, while Logistic Regression provides accurate mathematical classification. Both are suitable for categorical data prediction.
+
+---
