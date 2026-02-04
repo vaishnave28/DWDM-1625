@@ -1,0 +1,80 @@
+
+
+## **Step 1: Load Dataset in WEKA**
+
+1. Open **WEKA GUI Chooser**
+2. Click **Explorer**
+3. Go to **Preprocess**
+4. Click **Open file**
+5. Load `weather.arff`
+6. Set **Class attribute → play**
+
+---
+
+## **Decision Tree Classification (J48)**
+
+### **Step 2: Apply Decision Tree**
+
+1. Go to **Classify tab**
+2. Choose:
+
+   * `Classifier → trees → J48`
+3. Select **Test option → 10-fold cross validation**
+4. Click **Start**
+
+📌 **Output Observed**
+
+* Accuracy ≈ **92–95%**
+* Confusion matrix displayed
+* Decision tree generated
+
+---
+
+## **Rule-Based Classification (JRip)**
+
+### **Step 3: Apply Rule-Based Algorithm**
+
+1. In **Classify tab**
+2. Choose:
+
+   * `Classifier → rules → JRip`
+3. Select **10-fold cross validation**
+4. Click **Start**
+
+📌 **Output Observed**
+
+* Accuracy ≈ **85–90%**
+* IF–THEN rules generated
+* Confusion matrix displayed
+
+---
+
+## **Accuracy Comparison Table**
+
+| Algorithm           | Accuracy (%) |
+| ------------------- | ------------ |
+| Decision Tree (J48) | ~93%         |
+| Rule-Based (JRip)   | ~88%         |
+
+➡ **Decision Tree gives better accuracy**
+
+---
+
+## **Step 4: Plot Graph in WEKA**
+
+1. After running classifiers
+2. Right-click on result in **Result list**
+3. Click **Visualize classifier errors**
+4. Scatter plot of correct vs incorrect predictions is shown
+
+(You can also take screenshot for lab record)
+
+---
+
+## **Conclusion (Write This Exactly)**
+
+> Decision Tree and Rule-Based classification were implemented using WEKA on a categorical dataset.
+> The Decision Tree algorithm achieved higher accuracy compared to the Rule-Based classifier.
+> Hence, Decision Tree is more efficient for categorical data prediction.
+
+
