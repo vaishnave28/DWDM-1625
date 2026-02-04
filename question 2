@@ -1,0 +1,78 @@
+
+
+## **Given Data**
+
+* **Decision:** Expand factory or Not expand
+* **Cost of expansion:** $2M
+* **Probability of economy**
+
+  * Good economy = 45% (0.45)
+  * Bad economy = 55% (0.55)
+
+### **Payoffs**
+
+**Without Expansion**
+
+* Good economy → $4M
+* Bad economy → $1.5M
+
+**With Expansion**
+
+* Good economy → $7M − $2M = **$5M**
+* Bad economy → $3M − $2M = **$1M**
+
+---
+
+## **Decision Tree (Text Representation)**
+
+```
+                          [Decision]
+                              |
+              --------------------------------
+              |                              |
+        Expand Factory                 Do Not Expand
+              |                              |
+        ---------------              ----------------
+        |             |              |              |
+   Good Economy   Bad Economy     Good Economy   Bad Economy
+     (0.45)          (0.55)          (0.45)         (0.55)
+        |             |                |               |
+     $5M            $1M              $4M            $1.5M
+```
+
+---
+
+## **Expected Monetary Value (EMV)**
+
+### **EMV if Expand**
+
+[
+EMV = (0.45 \times 5) + (0.55 \times 1)
+]
+
+[
+EMV = 2.25 + 0.55 = \mathbf{2.8M}
+]
+
+---
+
+### **EMV if Not Expand**
+
+[
+EMV = (0.45 \times 4) + (0.55 \times 1.5)
+]
+
+[
+EMV = 1.8 + 0.825 = \mathbf{2.625M}
+]
+
+---
+
+## **Decision & Conclusion**
+
+* **EMV (Expand) = $2.8M**
+* **EMV (Do Not Expand) = $2.625M**
+
+✅ **Best decision:** **Expand the factory**
+Because it gives a **higher expected monetary value**.
+
