@@ -1,0 +1,27 @@
+# Strike rate data
+x <- c(100, 70, 60, 90, 90)
+
+# (a) Min-Max Normalization (0 to 1)
+min_max <- (x - min(x)) / (max(x) - min(x))
+
+# (b) Z-score Normalization (Standard Deviation)
+z_score <- (x - mean(x)) / sd(x)
+
+# (c) Z-score using Mean Absolute Deviation (MAD)
+mad_value <- mean(abs(x - mean(x)))
+z_mad <- (x - mean(x)) / mad_value
+
+# (d) Decimal Scaling Normalization
+j <- nchar(as.character(max(x)))
+decimal_scaling <- x / (10^j)
+
+# Display results
+result <- data.frame(
+  Original = x,
+  MinMax = round(min_max, 2),
+  Z_Score = round(z_score, 2),
+  Z_MAD = round(z_mad, 2),
+  Decimal = round(decimal_scaling, 2)
+)
+
+print(result)
