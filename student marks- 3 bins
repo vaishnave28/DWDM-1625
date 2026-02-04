@@ -1,0 +1,37 @@
+# Given marks
+marks <- c(55,60,71,63,55,65,50,55,58,59,61,63,65,67,71,72,75)
+
+# -------------------------------
+# (a) Equal-frequency (Equi-depth) partitioning
+# -------------------------------
+eq_freq <- cut(marks,
+               breaks = quantile(marks, probs = seq(0,1,length.out=4)),
+               include.lowest = TRUE)
+
+print("Equal Frequency Bins:")
+print(table(eq_freq))
+
+# -------------------------------
+# (b) Equal-width partitioning
+# -------------------------------
+eq_width <- cut(marks, breaks = 3, include.lowest = TRUE)
+
+print("Equal Width Bins:")
+print(table(eq_width))
+
+# -------------------------------
+# (c) Clustering (K-means with 3 clusters)
+# -------------------------------
+kmeans_result <- kmeans(marks, centers = 3)
+
+print("Clustering Result:")
+print(kmeans_result$cluster)
+
+# -------------------------------
+# Histogram
+# -------------------------------
+hist(marks,
+     breaks = 3,
+     main = "Histogram of Student Marks",
+     xlab = "Marks",
+     ylab = "Frequency")
