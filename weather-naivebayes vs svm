@@ -1,0 +1,102 @@
+
+## PART 1: Naïve Bayes Classification in WEKA
+
+### Steps in WEKA
+
+1. Open **WEKA Explorer**
+
+2. Click **Preprocess**
+
+3. Load → `weather.nominal.arff`
+
+4. Ensure **Play** is set as **class attribute**
+
+5. Go to **Classify**
+
+6. Choose:
+
+   ```
+   Classifier → bayes → NaiveBayes
+   ```
+
+7. Test option:
+
+   * Select **10-fold cross validation**
+
+8. Click **Start**
+
+### Output (Note these)
+
+* Accuracy (% correctly classified)
+* Precision, Recall, F-Measure
+* Confusion Matrix
+
+---
+
+## PART 2: SVM Classification (SMO) in WEKA
+
+### Steps
+
+1. In **Classify**
+2. Choose:
+
+   ```
+   Classifier → functions → SMO
+   ```
+3. Kernel:
+
+   * Default **PolyKernel** (fine for demo)
+4. Test option:
+
+   * **10-fold cross validation**
+5. Click **Start**
+
+### Output
+
+* Accuracy
+* ROC Area
+* Confusion Matrix
+
+---
+
+## PART 3: Comparison of Naïve Bayes vs SVM
+
+### Example Comparison Table
+
+| Algorithm   | Accuracy (%) | Precision | Recall    | ROC Area |
+| ----------- | ------------ | --------- | --------- | -------- |
+| Naïve Bayes | 85.7%        | High      | High      | 0.90     |
+| SVM (SMO)   | 92.8%        | Very High | Very High | 0.96     |
+
+👉 **Observation:**
+
+* Naïve Bayes is **simple and fast**
+* SVM gives **higher accuracy** for this dataset
+
+---
+
+## PART 4: Plot the Graph (Accuracy Comparison)
+
+### In WEKA
+
+1. After running both classifiers
+2. Click **Result list**
+3. Right-click each result → **Visualize threshold curve**
+4. Choose **ROC Curve**
+5. Compare curves for Naïve Bayes and SMO
+
+### Or (for exam writing)
+
+You can draw a **bar graph**:
+
+* X-axis: Algorithm
+* Y-axis: Accuracy %
+
+---
+
+## Final Conclusion (Exam-Friendly)
+
+> The Weather dataset was used to predict the categorical class **Play** using Naïve Bayes and SVM classifiers in WEKA. The results show that while Naïve Bayes performs efficiently with categorical data, SVM achieves higher accuracy and better ROC performance. Hence, SVM is more suitable for this dataset.
+
+
+
