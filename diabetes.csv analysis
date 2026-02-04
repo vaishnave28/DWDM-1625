@@ -1,0 +1,21 @@
+# Create dataset
+d <- data.frame(
+  Age = c(21,25,28,32,35,38,42,45,48,52,55,58,62,65,68),
+  BloodPressure = c(72,75,78,80,82,85,88,90,92,95,97,98,100,102,105),
+  Glucose = c(85,90,95,110,115,120,130,135,140,145,150,155,160,165,170),
+  BMI = c(22.4,24.1,25.6,27.3,28.5,29.1,30.2,31,32.5,33,34.2,35,36.1,37,38.5),
+  Outcome = c(0,0,0,1,1,1,1,1,1,1,1,1,1,1,1)
+)
+
+# Linear Regression (Age vs Outcome)
+lm1 <- lm(Outcome ~ Age, data=d)
+summary(lm1)
+
+# Scatter plot with regression line
+plot(d$Age, d$Outcome, main="Diabetes Trend vs Age",
+     xlab="Age", ylab="Outcome")
+abline(lm1, col="red")
+
+# Multiple Regression
+lm2 <- lm(Outcome ~ Age + BloodPressure + Glucose + BMI, data=d)
+summary(lm2)
