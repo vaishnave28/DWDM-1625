@@ -1,0 +1,22 @@
+@relation market_basket
+
+@attribute Bread {yes,no}
+@attribute Peanuts {yes,no}
+@attribute Milk {yes,no}
+@attribute Fruit {yes,no}
+@attribute Jam {yes,no}
+@attribute Soda {yes,no}
+@attribute Chips {yes,no}
+@attribute Steak {yes,no}
+@attribute Cheese {yes,no}
+@attribute Yogurt {yes,no}
+
+@data
+yes,yes,yes,yes,yes,no,no,no,no,no
+yes,no,yes,yes,yes,yes,yes,no,no,no
+yes,no,no,no,yes,yes,yes,yes,no,no
+no,yes,yes,yes,yes,yes,no,no,no,no
+yes,no,yes,no,yes,yes,yes,no,no,no
+no,no,yes,yes,no,yes,yes,no,no,no
+no,yes,yes,yes,no,yes,no,no,no,no
+no,yes,no,yes,no,no,no,no,yes,yes

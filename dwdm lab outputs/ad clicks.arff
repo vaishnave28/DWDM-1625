@@ -1,0 +1,16 @@
+@relation Ad_Click_Prediction
+
+@attribute Age numeric
+@attribute Gender {Male,Female}
+@attribute TimeOnSite {Low,Medium,High}
+@attribute InternetUsage {Low,Medium,High}
+@attribute Income {Low,Medium,High}
+@attribute Ad_Clicked {Yes,No}
+
+@data
+22,Male,High,High,Low,Yes
+25,Female,Medium,High,Medium,Yes
+28,Male,High,High,Medium,Yes
+30,Female,Medium,Medium,High,No
+35,Male,Medium,High,High,No
+40,Female,Low,Low,Hi

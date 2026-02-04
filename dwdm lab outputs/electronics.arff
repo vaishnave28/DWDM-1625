@@ -1,0 +1,18 @@
+@relation electronics
+
+@attribute SONY {yes,no}
+@attribute BPL {yes,no}
+@attribute LG {yes,no}
+@attribute SAMSUNG {yes,no}
+@attribute ONIDA {yes,no}
+
+@data
+yes,yes,yes,no,no
+no,yes,no,yes,no
+no,yes,no,no,yes
+yes,yes,no,yes,no
+yes,no,no,no,yes
+no,yes,no,no,yes
+yes,no,no,no,yes
+yes,yes,yes,no,no
+yes,yes,no,no,yes

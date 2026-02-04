@@ -1,0 +1,19 @@
+@relation bank_credit
+
+@attribute marital_status {married,single,divorced}
+@attribute gender {male,female}
+@attribute age_group {18_30,30_50,50_65,65_plus}
+@attribute income {10_25K,25_50K,50_65K,65_100K,100K_plus}
+@attribute class {good,bad}
+
+@data
+married,male,30_50,50_65K,good
+single,female,18_30,25_50K,good
+divorced,male,50_65,25_50K,bad
+married,female,30_50,65_100K,good
+single,male,18_30,10_25K,bad
+married,male,50_65,100K_plus,good
+divorced,female,30_50,25_50K,bad
+single,female,18_30,50_65K,good
+married,female,65_plus,25_50K,bad
+single,male,30_50,65_100K,good

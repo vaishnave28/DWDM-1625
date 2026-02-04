@@ -1,0 +1,15 @@
+@relation supermarket_transactions
+
+@attribute HotDogs {yes,no}
+@attribute Buns {yes,no}
+@attribute Ketchup {yes,no}
+@attribute Coke {yes,no}
+@attribute Chips {yes,no}
+
+@data
+yes,yes,yes,no,no      % T1
+yes,yes,no,no,no       % T2
+yes,no,no,yes,yes      % T3
+no,no,no,yes,yes       % T4
+no,no,yes,no,yes       % T5
+yes,no,no,yes,yes      % T6
