@@ -1,0 +1,5 @@
+veg <- c("yes","yes","yes","no","yes","no","no","yes","yes","yes")
+print(table(veg))
+print(ifelse(sum(veg=="yes") > sum(veg=="no"),
+             "Vegetarians are more",
+             "Non-vegetarians are more"))
