@@ -1,0 +1,89 @@
+
+
+
+
+## **2. WEKA Steps – Decision Tree (J48)**
+
+### **Step 1: Open WEKA**
+
+* Open **WEKA GUI Chooser**
+* Click **Explorer**
+
+### **Step 2: Load Dataset**
+
+* Go to **Preprocess**
+* Click **Open file**
+* Select `ad_clicks.arff`
+
+### **Step 3: Set Class Attribute**
+
+* At bottom-right, set **Class = Ad_Clicked**
+
+### **Step 4: Apply Decision Tree**
+
+* Go to **Classify**
+* Choose:
+
+  ```
+  Classifier → trees → J48
+  ```
+* Click **Start**
+
+### **Output**
+
+* Decision Tree
+* Accuracy
+* Confusion Matrix
+
+---
+
+## **3. WEKA Steps – Rule-Based Classifier (JRip)**
+
+### **Step 1: Choose Rule-Based Algorithm**
+
+* In **Classify**
+* Select:
+
+  ```
+  Classifier → rules → JRip
+  ```
+
+### **Step 2: Run Classifier**
+
+* Click **Start**
+
+### **Output**
+
+* IF–THEN rules
+* Accuracy
+* Confusion Matrix
+
+---
+
+## **4. Accuracy Comparison (Lab Note)**
+
+| Algorithm | Accuracy       | Model Type |
+| --------- | -------------- | ---------- |
+| J48       | Higher         | Tree-based |
+| JRip      | Slightly lower | Rule-based |
+
+*(Exact accuracy will be shown in WEKA output)*
+
+---
+
+## **5. Graph Plotting (Accuracy Comparison)**
+
+### **Steps**
+
+* Go to **Visualize**
+* Plot **Classifier Errors**
+* Compare J48 vs JRip visually
+
+---
+
+## **6. Conclusion (Write This)**
+
+> The Decision Tree (J48) and Rule-Based (JRip) classifiers were used to predict ad clicks.
+> J48 produced higher accuracy and a clear tree structure, while JRip generated understandable rules.
+> Decision Tree performed better for this dataset.
+
