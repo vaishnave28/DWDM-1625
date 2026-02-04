@@ -1,0 +1,87 @@
+
+
+## **Step 2: Apriori Algorithm in WEKA**
+
+### **Steps**
+
+1. Open **WEKA → Explorer → Preprocess**
+2. Load the ARFF file
+3. Go to **Associate**
+4. Choose **Apriori**
+5. Set:
+
+   * **Minimum Support = 0.4** (2/5)
+   * **Minimum Confidence = 0.8**
+6. Click **Start**
+
+---
+
+## **Frequent Itemsets (Apriori Result)**
+
+### **Frequent 1-Itemsets**
+
+* K (5)
+* E (4)
+* O (3)
+* M (3)
+* Y (3)
+* C (2)
+* N (2)
+
+### **Frequent 2-Itemsets**
+
+* {K, E} (4)
+* {O, K} (3)
+* {O, E} (3)
+* {M, K} (3)
+* {K, Y} (3)
+* {N, K} (2)
+* {N, E} (2)
+
+### **Frequent 3-Itemsets**
+
+* {O, K, E} (3)
+* {M, K, E} (2)
+
+---
+
+## **Step 3: FP-Growth Tree Construction**
+
+### **Steps in WEKA**
+
+1. Go to **Associate**
+2. Choose **FPGrowth**
+3. Set:
+
+   * **Minimum Support = 0.4**
+   * **Minimum Confidence = 0.8**
+4. Click **Start**
+
+---
+
+## **FP-Growth Tree (Conceptual)**
+
+```
+        K
+      / | \
+     E  O  M
+    /   |   \
+   O    E    K
+```
+
+(Items ordered by descending frequency: **K → E → O → M → Y → C → N**)
+
+---
+
+## **Inference**
+
+* Apriori generates frequent itemsets using candidate generation.
+* FP-Growth avoids candidate generation and is faster.
+* Both algorithms produce the **same frequent itemsets**.
+
+---
+
+## **Conclusion**
+
+The frequent itemsets were successfully generated using Apriori, and the FP-Growth tree was constructed efficiently. FP-Growth performs better in terms of speed and memory usage compared to Apriori.
+
