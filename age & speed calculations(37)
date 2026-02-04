@@ -1,0 +1,15 @@
+# Age data
+age <- c(30,57,68,96,39,40,20,19,42,12,25,25,65,35,30,23,23,35,45,85)
+
+# Speed data
+speed <- c(78.3,81.8,82,74.2,83.4,84.5,82.9,77.5,80.9,70.6)
+
+# Calculations
+mean_age <- mean(age)
+iqr_speed <- IQR(speed)
+sd_speed <- sd(speed)
+
+# Display results
+mean_age
+iqr_speed
+sd_speed
