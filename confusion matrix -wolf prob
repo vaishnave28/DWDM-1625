@@ -1,0 +1,66 @@
+
+
+## Step 1: Define the problem
+
+We are **predicting whether a wolf is present or not** based on the boy’s warning.
+
+* **Positive (Yes)** → Wolf is present
+
+* **Negative (No)** → Wolf is NOT present
+
+* **Predicted** → Boy shouts “Wolf!”
+
+* **Actual** → Wolf really exists or not
+
+---
+
+## Step 2: Identify each situation
+
+### Situation 1: Boy lies (joke)
+
+* Boy shouts **“Wolf!”**
+* **No wolf present**
+* Villagers come unnecessarily
+
+➡️ **False Positive (FP)**
+(Predicted wolf, actually no wolf)
+
+---
+
+### Situation 2: Real wolf comes
+
+* Boy shouts **“Wolf!”**
+* **Wolf is present**
+* Villagers ignore the warning
+
+➡️ **False Negative (FN)**
+(Wolf present, but prediction ignored)
+
+---
+
+### Missing cases (did not happen in story but needed for matrix)
+
+* **True Positive (TP)**:
+  Wolf present and villagers respond correctly ❌ (did not happen)
+
+* **True Negative (TN)**:
+  No wolf and villagers correctly ignore ❌ (did not happen)
+
+---
+
+## Step 3: Confusion Matrix
+
+|                        | **Actual: Wolf** | **Actual: No Wolf** |
+| ---------------------- | ---------------- | ------------------- |
+| **Predicted: Wolf**    | TP = 0           | FP = 1              |
+| **Predicted: No Wolf** | FN = 1           | TN = 0              |
+
+---
+
+## Step 4: Interpretation (write this in exam)
+
+* The system produced **False Positives** due to repeated false alarms
+* It later resulted in a **False Negative**, causing real damage
+* Loss of trust reduced model effectiveness
+* Highlights importance of **precision and reliability** in prediction systems
+
